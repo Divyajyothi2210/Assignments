@@ -1,0 +1,211 @@
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~
+$ cd OneDrive
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive
+$ cd Desktop
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop
+$ cd Assignments
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/LENOVO/OneDrive/Desktop/Assignments/.git/
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git branch js-assignments
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git status
+On branch js-assignments
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        JS1.js
+        JS2.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git add *.js
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git commit -m "added 2 JS files"
+[js-assignments ac3d5b0] added 2 JS files
+ 2 files changed, 2 insertions(+)
+ create mode 100644 JS1.js
+ create mode 100644 JS2.js
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git status
+On branch js-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a"
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git add README.txt
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git commit -m "changed line 1 in README file"
+[js-assignments 708a50b] changed line 1 in README file
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git add README.txt
+
+K.Bhargava Pavani@LAPTOP-OCJCDNSR MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git commit -m "changed a line in readme file"
+[master dc91a4f] changed a line in readme file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git status
+On branch js-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git add README.txt
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git commit -m "some changes are done in readme file"
+[js-assignments 9f52f4e] some changes are done in readme file
+ 1 file changed, 1 insertion(+)
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git add README.txt
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git commit -m "Readme file is modified"
+[master 17922f4] Readme file is modified
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git status
+On branch js-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   JS1.js
+        modified:   JS2.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git add *.js
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git commit -m "modified js files"
+[js-assignments 7cbb681] modified js files
+ 2 files changed, 35 insertions(+), 2 deletions(-)
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git merge js-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master|MERGING)
+$ git checkout js-assigments
+error: pathspec 'js-assigments' did not match any file(s) known to git
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master|MERGING)
+$ git checkout js-assignments
+error: you need to resolve your current index first
+README.txt: needs merge
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master|MERGING)
+$ git merge js-assignments
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   JS1.js
+        new file:   JS2.js
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.txt
+
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master|MERGING)
+$ git add README.txt
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master|MERGING)
+$ git commit -m "changes are made to solve merge issue"
+[master 083df57] changes are made to solve merge issue
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git merge js-assignments
+Already up to date.
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$ git branch -d js-assignments
+Deleted branch js-assignments (was 7cbb681).
+
+LENOVO@DESKTOP-NIRDJOO MINGW64 ~/OneDrive/Desktop/Assignments (master)
+$
