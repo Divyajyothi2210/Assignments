@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+           <bean id="customer" class="springdemo.customer" init-method="init" destroy-method="destroy">
+               <property name="id" value="512"/>
+               <property name="name" value="navya"/>
+               <property name="phno" value="9652606488"/>
+               <property name="a" ref="address"/>
+           </bean>
+           <bean id="address" class="springdemo.address">
+            <property name="street" value="ramalayam street"/>
+            <property name="city" value="eluru"/>
+            <property name="state" value="andhrapradesh"/>
+            <property name="zip" value="534462"/>
+            <property name="country" value="india"/>
+            
+           </bean>
+           <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+ </beans>

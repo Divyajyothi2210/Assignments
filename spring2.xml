@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+           <bean id="ques" class="springdemo.question">
+           <property name="qno" value="1"/>
+           <property name="question" value="what is class?"/>
+           <property name="list">
+           <list>
+           <value>class is blueprint of object</value>
+           </list>
+           </property>
+           <property name="set">
+           <set>
+           <value>class is blueprint of objects</value>
+           </set>
+           
+           </property>
+           <property name="map">
+           <map>
+           <entry key="1" value="class is blueprint of objects"/>
+           </map>
+           
+           </property>
+      
+           </bean>
+ </beans>
